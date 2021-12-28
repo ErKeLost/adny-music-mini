@@ -2,7 +2,9 @@
   "pages": [
     "pages/music/index",
     "pages/video/index",
-    "pages/login/index" 
+    "pages/login/index",
+    "components/video-list",
+    "pages/detail-video/detail-video"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,13 +23,13 @@
       {
         "pagePath": "pages/video/index",
         "text": "视频",
-        "iconPath":"assets/images/tabbar/video_normal.png",
+        "iconPath": "assets/images/tabbar/video_normal.png",
         "selectedIconPath": "assets/images/tabbar/video_active.png"
       },
       {
         "pagePath": "pages/login/index",
         "text": "个人中心",
-        "iconPath":"assets/images/tabbar/user_normal.png",
+        "iconPath": "assets/images/tabbar/user_normal.png",
         "selectedIconPath": "assets/images/tabbar/user_active.png"
       }
     ]

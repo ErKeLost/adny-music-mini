@@ -1,0 +1,4 @@
+<!--pages/detail-video/detail-video.wxml-->
+<view>
+  {{mvItemId}}
+</view>

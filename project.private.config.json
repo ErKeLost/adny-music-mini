@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -15,6 +16,12 @@
           "name": "video",
           "pathName": "pages/video/index",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "detail-video",
+          "pathName": "pages/detail-video/detail-video",
+          "query": "id=14486396",
           "scene": null
         }
       ]

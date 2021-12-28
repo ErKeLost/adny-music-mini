@@ -7,12 +7,10 @@ class ARequest {
         url: `${BASE_URL}/${url}`,
         method,
         data: params,
-        success: function(res) {
-          resolve(res) 
+        success: function (res) {
+          resolve(res.data)
         },
-        fail: function(err) {
-          reject(err)
-        }
+        fail: reject
       })
     })
   }

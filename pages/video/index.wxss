@@ -1,1 +1,15 @@
 /* pages/video/index.wxss */
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+/* components/video-item-v1/index.wxss */
+.video-item{
+  width: 48%;
+}
