@@ -1,19 +1,23 @@
 // pages/detail-video/detail-video.js
+import { getMvUrl } from '../../servise/api_video.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    mvItemId: null
+    mvItemId: null,
+    mvUrl: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     console.log(options);
     this.setData({ mvItemId: options.id })
+    const url = await getMvUrl({id: this.data.mvItemId})
+    this.setData({ mvUrl: url.data.url })
   },
 
   /**

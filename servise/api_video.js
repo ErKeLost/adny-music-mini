@@ -6,3 +6,6 @@ export function getTopMv(data) {
 export function getPhoneBanner() {
   return ARequest.get('banner?type=2')
 }
+export function getMvUrl(id) {
+  return ARequest.get('mv/url', id)
+}

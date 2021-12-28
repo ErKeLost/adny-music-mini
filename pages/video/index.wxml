@@ -1,13 +1,7 @@
 <!-- pages/video/index.wxml -->
 <view class="video">
-  <view class="swiper">
-    <swiper circular="{{circular}} " easing-function="{{easing}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{mvSwiperList}}" wx:key="*this">
-        <swiper-item>
-          <image class="swiper-item" src="{{item.pic}}"></image>
-        </swiper-item>
-      </block>
-    </swiper>
+  <view class="mvSwiper">
+    <banner mvSwiperList="{{mvSwiperList}}"></banner>
   </view>
   <view class="video-list">
     <view class="video-item" wx:for="{{mvList}}" wx:key="id">

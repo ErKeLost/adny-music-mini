@@ -1,4 +1,4 @@
 <!--pages/detail-video/detail-video.wxml-->
-<view>
-  {{mvItemId}}
+<view class="video-detail">
+  <video 	autoplay="{{true}}" class="video-container" src="{{mvUrl}}"></video>
 </view>

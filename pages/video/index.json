@@ -2,6 +2,7 @@
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark",
   "usingComponents": {
-    "video-list": "/components/video-list/video-list"
+    "video-list": "/components/video-list/video-list",
+    "banner": "/components/banner/banner"
   }
 }
