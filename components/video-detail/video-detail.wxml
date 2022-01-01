@@ -1,0 +1,8 @@
+<!--components/video-detail.wxml-->
+<wxs src="../../utils/util.wxs" module="format"></wxs>
+
+<view class="video-detail">
+  <view class="video-title">{{data.name}}</view>
+  <view class="video-art">{{data.artistName}}</view>
+  <view class="video-counter">{{format.formatCount(data.playCount)}}次播放 - {{data.publishTime}}</view>
+</view>

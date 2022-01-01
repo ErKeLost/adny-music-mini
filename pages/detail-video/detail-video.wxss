@@ -1,4 +1,14 @@
 /* pages/detail-video/detail-video.wxss */
+page {
+  padding-top: 335px;
+}
 .video-container {
   width: 100%;
+}
+.video-detail {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  background: white;
 }

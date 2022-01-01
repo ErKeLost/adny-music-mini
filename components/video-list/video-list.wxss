@@ -50,10 +50,10 @@
   /* 显示两行 */
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   display: -moz-box;
-  -moz-line-clamp: 2;
+  -moz-line-clamp: 1;
   -moz-box-orient: vertical;
   word-wrap: break-word;
   word-break: break-all;

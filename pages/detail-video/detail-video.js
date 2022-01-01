@@ -1,5 +1,5 @@
 // pages/detail-video/detail-video.js
-import { getMvUrl } from '../../servise/api_video.js'
+import { getMvUrl, getMvDetail, getMvRelated } from '../../servise/api_video.js'
 Page({
 
   /**
@@ -8,18 +8,27 @@ Page({
   data: {
     mvItemId: null,
     mvUrl: null,
+    mvDetail: {},
+    mvRelated: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: async function (options) {
-    console.log(options);
+  onLoad: function (options) {
     this.setData({ mvItemId: options.id })
+    this.getMvDetailPageData()
+  },
+  async getMvDetailPageData() {
     const url = await getMvUrl({id: this.data.mvItemId})
     this.setData({ mvUrl: url.data.url })
+    getMvDetail({mvid: this.data.mvItemId}).then(res => {
+      this.setData({ mvDetail: res.data})
+    })
+    getMvRelated({mvid: this.data.mvItemId}).then(res => {
+      this.setData({ mvRelated: res.mvs})
+    }) 
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

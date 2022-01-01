@@ -1,4 +1,15 @@
 <!--pages/detail-video/detail-video.wxml-->
 <view class="video-detail">
-  <video 	autoplay="{{true}}" class="video-container" src="{{mvUrl}}"></video>
+  <video vslide-gesture-in-fullscreen="{{true}}" 
+          vslide-gesture="{{true}}" 
+          auto-pause-if-open-native="{{true}}" 
+          enable-progress-gesture="{{true}}" 
+          autoplay="{{true}}" 
+          class="video-container" 
+          src="{{mvUrl}}">
+  </video>
+  <video-detail data="{{mvDetail}}"></video-detail>
+</view>
+<view class="video-related">
+  <video-related data="{{mvRelated}}" title="相关视频"></video-related>
 </view>

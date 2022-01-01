@@ -1,0 +1,22 @@
+/* components/video-detail.wxss */
+
+
+.video-detail {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.video-title {
+  font-weight: bold;
+}
+.video-art {
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+}
+
+.video-counter {
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+}

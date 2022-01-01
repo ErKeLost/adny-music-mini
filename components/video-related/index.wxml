@@ -1,0 +1,20 @@
+<!--components/video-related/index.wxml-->
+<wxs src="../../utils/util.wxs" module="format"></wxs>
+
+<view class="video-related">
+  <view>{{title}}</view>
+  <block wx:for="{{data}}" wx:key="*this">
+    <view class="video-related-item" bindtap="handleMvItemClick" data-item="{{item}}">
+      <view>
+        <image class="video-related-image" src="{{item.cover}}"></image>
+      </view>
+      <view class="video-related-content">
+        <view class="video-related-title">{{item.briefDesc || item.artistName}}- {{item.name}}</view>
+        <view class="video-related-art">
+          <view>{{item.artistName}}</view>
+          <view>{{format.formatCount(item.playCount)}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
