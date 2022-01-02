@@ -4,12 +4,13 @@
     "pages/video/index",
     "pages/login/index",
     "components/video-list",
-    "pages/detail-video/detail-video"
+    "pages/detail-video/detail-video",
+    "pages/search/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "安东尼娅",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

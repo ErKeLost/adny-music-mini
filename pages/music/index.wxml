@@ -1,1 +1,15 @@
 <!--pages/home-music/index.wxml-->
+<vant-search
+  background="#fafafa"
+  disabled="true"
+  shape="round"
+  placeholder="安东尼娅"
+  bind:click-input="handleSearch"
+></vant-search>
+<swiper class="swiper" autoplay loop style="height: {{bannerHeight}}px;">
+  <block wx:for="{{banner}}" wx:key="bannerId">
+    <swiper-item class="swiper-item">
+      <image  class="swiper-image" bindload="handelLoadImage" src="{{item.pic}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
