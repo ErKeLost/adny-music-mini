@@ -11,7 +11,8 @@ Page({
    */
   data: {
     banner: [],
-    bannerHeight: 100
+    bannerHeight: 100,
+    recommendSong: []
   },
 
   /**
@@ -20,6 +21,10 @@ Page({
   onLoad: function (options) {
     this.getPageData()
     rankstore.dispatch("getRankDataAction")
+    rankstore.onState('hotRanking', (res) => {
+      const recommendSong = res.tracks?.slice(0, 6)
+      this.setData({recommendSong})
+    })
   },
   handleSearch() {
     wx.navigateTo({

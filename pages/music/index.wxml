@@ -16,4 +16,9 @@
 <!-- 推荐歌曲 -->
 <view class="recommend-song"> 
   <area-header title="推荐歌曲" rightText="更多"></area-header>
+  <view class="song-list">
+    <block wx:for="{{recommendSong}}">
+      <recommend-song item="{{item}}"></recommend-song>
+    </block>
+  </view>
 </view>

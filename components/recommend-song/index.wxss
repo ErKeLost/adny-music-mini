@@ -1,0 +1,27 @@
+/* components/recommend-song/index.wxss */
+.item {
+  display: flex;
+  padding: 16rpx 0;
+  align-items: center;
+}
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 16rpx;
+}
+.content {
+  height: 100rpx;
+  font-size: 28rpx;
+  margin-left: 16rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.art {
+  color: #777;
+}

@@ -1,0 +1,11 @@
+<!--components/recommend-song/index.wxml-->
+<view class="item">
+  <image class="image" src="{{item.al.picUrl}}"></image>
+  <view class="content">
+    <view class="name">{{item.name}}</view>
+    <view class="art">{{item.ar[0].name}} . {{item.al.name}}</view>
+  </view>
+  <view class="arrow">
+    <image class="icon" src="../../assets/images/icons/right.png"></image>
+  </view>
+</view>
