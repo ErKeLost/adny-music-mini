@@ -6,11 +6,11 @@ Component({
   properties: {
     data: {
       type: Array,
-      default: () => []
+      value: () => []
     },
     title: {
       type: String,
-      default: ''
+      value: ''
     }
   },
 

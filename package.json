@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ErKeLost/adny-music-mini#readme",
   "dependencies": {
-    "@vant/weapp": "^1.10.0"
+    "@vant/weapp": "^1.10.0",
+    "hy-event-store": "^1.1.1"
   }
 }

@@ -6,6 +6,7 @@
           enable-progress-gesture="{{true}}" 
           autoplay="{{true}}" 
           class="video-container" 
+          referer-policy="origin"
           src="{{mvUrl}}">
   </video>
   <video-detail data="{{mvDetail}}"></video-detail>

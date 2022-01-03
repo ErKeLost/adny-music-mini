@@ -1,4 +1,5 @@
 // pages/home-music/index.js
+import { rankstore } from '../../store/index'
 import {
   getPhoneBanner
 } from '../../servise/api_video.js'
@@ -18,6 +19,7 @@ Page({
    */
   onLoad: function (options) {
     this.getPageData()
+    rankstore.dispatch("getRankDataAction")
   },
   handleSearch() {
     wx.navigateTo({

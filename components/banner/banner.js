@@ -6,7 +6,7 @@ Component({
   properties: {
     mvSwiperList: {
       type: Array,
-      default: []
+      value: []
     }
   },
 

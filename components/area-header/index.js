@@ -1,12 +1,16 @@
-// components/video-detail.js
+// components/area-header/index.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    data: {
-      type: Object,
-      value: () => {}
+    title: {
+      type: String,
+      value: "安东尼娅"
+    },
+    rightText: {
+      type: String,
+      value: "文本"
     }
   },
 
