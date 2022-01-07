@@ -1,1 +1,50 @@
 /* pages/search/index.wxss */
+page {
+  padding: 0 20rpx;
+}
+.hot {
+  padding:30rpx 10rpx;
+}
+
+.hot .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hot .tag {
+  font-size: 25rpx;
+  background-color: #fff;
+  padding: 10rpx 12rpx;
+  border-radius: 16rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.hot .tag:first-of-type {
+  color: #26ce8a;
+}
+.suggest {
+  padding: 10rpx;
+}
+
+.suggest .title {
+  color: #26ce8a;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.suggest .item {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.suggest .item .icon {
+  width: 66rpx;
+  margin-left: -20rpx;
+}
+
+.suggest .item .text {
+  font-size: 28rpx;
+}
+

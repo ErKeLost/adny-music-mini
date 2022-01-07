@@ -29,6 +29,18 @@
           "pathName": "pages/music/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/rank/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "serach-detail",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

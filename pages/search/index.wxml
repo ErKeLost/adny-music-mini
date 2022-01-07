@@ -1,2 +1,29 @@
 <!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<vant-search
+  background="#fafafa"
+  shape="round"
+  placeholder="安东尼娅"
+  bind:click-input="handleSearch"
+  bind:change="handleSearch"
+></vant-search>
+<view class="hot" wx:if="{{!searchValue.length}}">
+  <area-header title="热门搜索" showRight="{{false}}"></area-header>
+  <view class="list">
+    <block wx:for="{{hotKeywords}}" wx:key="first">
+      <view class="tag">{{item.first}}</view>
+    </block>
+  </view>
+</view>
+
+
+<view class="suggest" wx:elif="{{suggestSongs.length}}">
+  <view class="title">搜索"{{searchValue}}"</view>
+  <view class="list">
+    <block wx:for="{{suggestSongs}}" wx:key="keyword">
+      <view class="item">
+        <image class="icon" mode="widthFix" src="/assets/images/icons/search_icon.png"></image>
+        <text class="text">{{item.keyword}}</text>
+      </view>
+    </block>
+  </view>
+</view>

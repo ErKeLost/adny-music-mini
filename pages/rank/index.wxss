@@ -1,0 +1,4 @@
+/* pages/rank/index.wxss */
+.ranking {
+  padding: 0 20rpx;
+}

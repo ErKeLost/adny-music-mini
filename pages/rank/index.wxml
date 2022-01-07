@@ -1,0 +1,18 @@
+<!--pages/rank/index.wxml-->
+
+<vant-search
+  background="#fafafa"
+  disabled="true"
+  shape="round"
+  placeholder="安东尼娅"
+  bind:click-input="handleSearch"
+></vant-search>
+
+<view class="ranking">
+  <area-header title="排行榜" showRight="{{false}}"></area-header>
+  <view class="ranking-list">
+    <block wx:for="{{rankings}}" wx:key="index">
+      <rank-item bind:tap="handleRankClick" data-idx="{{index}}" item="{{item}}"></rank-item>
+    </block>
+  </view>
+</view>

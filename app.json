@@ -5,7 +5,10 @@
     "pages/login/index",
     "components/video-list",
     "pages/detail-video/detail-video",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/rank/index",
+    "pages/detail-songs/index",
+    "components/song-item/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,6 +21,12 @@
       {
         "pagePath": "pages/music/index",
         "text": "音乐",
+        "iconPath": "assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/rank/index",
+        "text": "排行榜",
         "iconPath": "assets/images/tabbar/music_normal.png",
         "selectedIconPath": "assets/images/tabbar/music_active.png"
       },

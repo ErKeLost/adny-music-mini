@@ -6,6 +6,7 @@
   placeholder="安东尼娅"
   bind:click-input="handleSearch"
 ></vant-search>
+<!-- 轮播图 -->
 <swiper class="swiper" autoplay loop style="height: {{bannerHeight}}px;">
   <block wx:for="{{banner}}" wx:key="bannerId">
     <swiper-item class="swiper-item">
@@ -13,11 +14,14 @@
     </swiper-item>
   </block>
 </swiper>
+<!-- 歌单列表 -->
+<song-menu wx:if="{{hotSongMenu.length > 0}}" title="热门歌单" rightText="更多" songMenu="{{hotSongMenu}}"></song-menu>
+<song-menu wx:if="{{recommendSongMenu.length > 0}}" title="推荐歌单" rightText="更多" songMenu="{{recommendSongMenu}}"></song-menu>
 <!-- 推荐歌曲 -->
-<view class="recommend-song"> 
-  <area-header title="推荐歌曲" rightText="更多"></area-header>
+<view class="recommend-song" wx:if="{{recommendSong.length > 0}}"> 
+  <area-header title="推荐歌曲" bind:click="handleMoreClick" rightText="更多"></area-header>
   <view class="song-list">
-    <block wx:for="{{recommendSong}}">
+    <block wx:for="{{recommendSong}}" wx:key="item">
       <recommend-song item="{{item}}"></recommend-song>
     </block>
   </view>

@@ -1,0 +1,59 @@
+/* components/ranking-item/index.wxss */
+.item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 12rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.content-list-item {
+  color: #333;
+  margin-top: 6rpx;
+  width: 100%;
+
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-emphasis: none;
+}
+.content-list-item .singer {
+  color: #999;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24rpx;
+  flex: 1;
+  overflow: hidden;
+}
+.right {
+  width: 220rpx;
+  position: relative;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.title {
+  font-size: 34rpx;
+}
+.list {
+  font-size: 24rpx;
+  width: 100%;
+  margin-top: 6rpx;
+}
+.play-counter {
+  position: absolute;
+  right: 0;
+  bottom: 10rpx;
+  color: #fff;
+  font-size: 22rpx;
+  border-radius: 12rpx;
+  padding: 6rpx 10rpx;
+  background: rgba(0,0,0, .5);
+}

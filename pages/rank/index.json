@@ -2,7 +2,6 @@
   "usingComponents": {
     "vant-search": "@vant/weapp/search/index",
     "area-header": "../../components/area-header/index",
-    "recommend-song": "../../components/recommend-song/index",
-    "song-menu": "../../components/song-menu/index"
+    "rank-item": "../../components/ranking-item/index"
   }
 }

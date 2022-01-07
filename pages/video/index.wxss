@@ -1,9 +1,12 @@
 /* pages/video/index.wxss */
-
+.video {
+  padding: 15rpx;
+}
 .video-list {
   display:flex;
   flex-wrap: wrap;
   justify-content:space-around;
+  overflow: hidden;
 }
 /* components/video-item-v1/index.wxss */
 .video-item{

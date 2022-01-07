@@ -3,6 +3,9 @@ import { rankstore } from '../../store/index'
 import {
   getPhoneBanner
 } from '../../servise/api_video.js'
+import {
+  getSongMenu
+} from '../../servise/api_music.js'
 import querySelector from '../../utils/querySelector'
 Page({
 
@@ -12,7 +15,9 @@ Page({
   data: {
     banner: [],
     bannerHeight: 100,
-    recommendSong: []
+    recommendSong: [],
+    hotSongMenu: [],
+    recommendSongMenu: []
   },
 
   /**
@@ -37,12 +42,23 @@ Page({
         banner: res.banners
       })
     })
+    getSongMenu().then(res => {
+      this.setData({ hotSongMenu: res.playlists})
+    })
+    getSongMenu("华语").then(res => {
+      this.setData({ recommendSongMenu: res.playlists})
+    })
   },
   handelLoadImage() {
     querySelector('.swiper-image').then(res => {
       this.setData({
         bannerHeight: res[0].height
       })
+    })
+  },
+  handleMoreClick() {
+    wx.navigateTo({
+      url: '/pages/detail-songs/index'
     })
   }
 })

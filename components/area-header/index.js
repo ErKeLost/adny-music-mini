@@ -11,6 +11,10 @@ Component({
     rightText: {
       type: String,
       value: "文本"
+    },
+    showRight: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -25,6 +29,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-  }
+    handleRightClick() {
+      this.triggerEvent("click")
+    }
+  } 
 })
