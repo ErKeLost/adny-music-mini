@@ -16,7 +16,7 @@ Page({
     banner: [],
     bannerHeight: 100,
     recommendSong: [],
-    hotSongMenu: [],
+    hotSongMenu: new Set(),
     recommendSongMenu: []
   },
 

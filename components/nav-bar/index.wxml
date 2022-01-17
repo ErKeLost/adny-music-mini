@@ -1,0 +1,23 @@
+<!--components/nav-bar/index.wxml-->
+<view class="nav">
+  <view class="status" style="height: {{statusBarHeight}}px;"></view>
+  <view class="nav-bar">
+    <view class="left">
+      <view class="left-slot">
+        <slot name="left"></slot>
+      </view>
+      <view class="left-arrow">
+        <image class="icon" src="/assets/images/icons/right.png"></image>
+      </view>
+    </view>
+    <view class="center">
+      <view class="center-slot">
+        <slot name="title"></slot>
+      </view>
+      <view class="center-title">
+        {{title}}
+      </view>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/player/index.wxml-->
+<wxs src="../../utils/util.wxs" module="format"></wxs>
+<image class="bg-image" mode="aspectFill" src="{{currentSong.al.picUrl}}"></image>
+<view class="bg-cover"></view>
+<nav-bar>
+  <view slot="title" class="tab">
+    <view class="{{currentPage === 0 ? 'active' : ''}}">歌曲</view>
+    <view class="divider">|</view>
+    <view class="{{currentPage === 1 ? 'active' : ''}}">歌词</view>
+  </view>
+</nav-bar>
+<!-- 内容 -->
+<swiper class="content" style="height: {{contentHeight}}px" bindchange="handleSwiperChange">
+  <swiper-item class="music">
+    <!-- <view class="album"> -->
+    <image src="{{currentSong.al.picUrl}}" class="image" mode="widthFix"></image>
+    <!-- </view> -->
+    <view class="info">
+      <view class="title">{{currentSong.name}}</view>
+      <view class="subtitle">
+        <view class="singer">{{currentSong.ar[0].name}}</view>
+        <view class="alias">专辑: {{currentSong.alia[0]}}</view>
+      </view>
+    </view>
+    <view class="lyric">我是歌词</view>
+    <view class="progress">
+      <slider class="slider" bindchanging="handleSliderChanging" value="{{sliderValue}}" bindchange="handleSliderChange" block-size="{{12}}"></slider>
+      <view class="time">
+        <view class="current">{{format.formatDuration(currentTime)}}</view>
+        <view class="duration">{{format.formatDuration(duration)}}</view>
+      </view>
+    </view>
+    <view class="operation">
+      <image class="btn btn-mode" src="/assets/images/player/play_order.png"></image>
+      <image class="btn btn-prev" src="/assets/images/player/play_prev.png"></image>
+      <image bindtap="handlePause" class="btn btn-pause" src="/assets/images/player/play_pause.png"></image>
+      <image class="btn btn-next" src="/assets/images/player/play_next.png"></image>
+      <image class="btn btn-music" src="/assets/images/player/play_music.png"></image>
+    </view>
+  </swiper-item>
+  <swiper-item></swiper-item>
+</swiper>

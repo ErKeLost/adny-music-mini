@@ -41,6 +41,12 @@
           "pathName": "pages/search/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "player",
+          "pathName": "pages/player/index",
+          "query": "id=1901371647",
+          "scene": null
         }
       ]
     }

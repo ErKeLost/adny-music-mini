@@ -6,8 +6,10 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     // 获取系统info
-    const info = wx.getSystemInfo()
+    const info = wx.getSystemInfoSync()
+    console.log(info);
     this.globalData.screenWidth = info.screenWidth
+    this.globalData.statusBarHeight = info.statusBarHeight
     this.globalData.screenHeight = info.screenHeight
     // 登录
     wx.login({
@@ -19,6 +21,7 @@ App({
   globalData: {
     userInfo: null,
     screenWidth: 0,
-    screenHeight: 0
+    screenHeight: 0,
+    statusBarHeight: 0
   }
 })
